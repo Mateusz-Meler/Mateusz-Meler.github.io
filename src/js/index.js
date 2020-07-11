@@ -5,5 +5,3 @@ import '../scss/main.scss';
 // registerSW();
 
 /* place your code below */
-
-console.log('HELLO 🚀')
