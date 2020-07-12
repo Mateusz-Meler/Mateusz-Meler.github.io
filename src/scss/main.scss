@@ -85,29 +85,56 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
-    margin: 0;
+    margin: none;
     list-style: none;
-    max-width: 288px;
+    padding: 0 100px 0 0;
+    &--item {
+      margin: 12px 0px;
+    }
     &--item::before {
       content: url(../assets/img/small-tick.png);
-      display: inline-block;
       margin-right: 12px;
+    }
+    &--other {
+      margin: 12px 0px;
+    }
+    &--other::before {
+      content: url(../assets/img/small-tick2.png);
+      margin-right: 12px;
+    }
+    &--another {
+      margin: 12px 0px;
+    }
+    &--another::before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background-color: #dbeaf7;
+      margin-right: 17px;
+      margin-bottom: 4px;
     }
   }
 }
 
 .skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1070ca;
   padding: 64px 0;
   &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     margin: 0;
   }
   &__emoji {
