@@ -66,11 +66,6 @@ body {
   }
 }
 
-
-
-
-
-
 .skills-article {
   display: flex;
   flex-direction: column;
@@ -91,6 +86,13 @@ body {
     font-size: 16px;
     line-height: 32px;
     margin: 0;
+    list-style: none;
+    max-width: 288px;
+    &--item::before {
+      content: url(../assets/img/small-tick.png);
+      display: inline-block;
+      margin-right: 12px;
+    }
   }
 }
 
