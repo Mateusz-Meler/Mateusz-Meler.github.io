@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap');
 
 html {
   box-sizing: border-box;
@@ -154,33 +155,67 @@ body {
   color: #1070ca;
 }
 
-.github-box {
+.github {
   width: 288px;
   background: #212528;
   min-height: 320px;
   border-radius: 16px;
   position: relative;
+  margin-bottom: 24px;
   &__bar {
-  background: #1E1E1E;
-  height: 40px;
-  border-radius: 16px 16px 0 0;
-  display: flex;
-  padding: 16px;
+    background: #1e1e1e;
+    height: 40px;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    padding: 16px;
   }
   &__circle {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #464A4D;
+    background: #464a4d;
     align-self: center;
     margin-right: 8px;
-  }
-  &__list {
-    list-style: none;
   }
   &__logo {
     position: absolute;
     top: 64px;
     left: 16px;
+  }
+  &__elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+  }
+}
+
+.list {
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  color: #808082;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: right;
+  margin-top: 72px;
+  padding: 0;
+  &--item {
+    margin: 4px 30px 0px 0;
+  }
+}
+.secondary-list{
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  color: #808082;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: right;
+  padding: 0;
+  margin-top: 48px;
+  &--item {
+    margin: 4px 30px 0px 0;
   }
 }
