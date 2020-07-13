@@ -153,3 +153,34 @@ body {
 .special {
   color: #1070ca;
 }
+
+.github-box {
+  width: 288px;
+  background: #212528;
+  min-height: 320px;
+  border-radius: 16px;
+  position: relative;
+  &__bar {
+  background: #1E1E1E;
+  height: 40px;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  padding: 16px;
+  }
+  &__circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #464A4D;
+    align-self: center;
+    margin-right: 8px;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__logo {
+    position: absolute;
+    top: 64px;
+    left: 16px;
+  }
+}
