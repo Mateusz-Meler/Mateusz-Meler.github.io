@@ -94,14 +94,14 @@ body {
       margin: 12px 0px;
     }
     &--item::before {
-      content: url(../assets/img/small-tick.png);
+      content: url(../assets/img/small-tick.svg);
       margin-right: 12px;
     }
     &--other {
       margin: 12px 0px;
     }
     &--other::before {
-      content: url(../assets/img/small-tick2.png);
+      content: url(../assets/img/small-tick2.svg);
       margin-right: 12px;
     }
     &--another {
@@ -176,7 +176,6 @@ body {
   &__elements {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
   }
 }
 
@@ -243,4 +242,49 @@ body {
 
 .special {
   color: #1070ca;
+}
+
+.date {
+  font-family: "Roboto Mono", monospace;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-top: 72px;
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 4px;
+  }
+  &__description {
+    color: #a3a3a3;
+    margin-top: 4px;
+  }
+  &__homepage {
+    color: #14b5d0;
+    margin-top: 4px;
+  }
+  &__homepage::before {
+    content: "<";
+    color: #808082;
+  }
+  &__homepage::after {
+    content: ">";
+    color: #808082;
+  }
+  &__github {
+    color: #14b5d0;
+    margin-top: 4px;
+  }
+  &__github::before {
+    content: "<";
+    color: #808082;
+  }
+  &__github::after {
+    content: ">";
+    color: #808082;
+  }
 }
