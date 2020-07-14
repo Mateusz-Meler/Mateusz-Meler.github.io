@@ -20,7 +20,7 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
       <div class="github__circle"></div>
     </div>
     <div class="github__elements">
-    <img class="github__logo" src="public/img/github-logo.svg" alt="github logo">
+    <img class="github__logo" src="img/github-logo.svg" alt="github logo">
     <ul class="list">
     
       <li class="list--item">project:</li>
