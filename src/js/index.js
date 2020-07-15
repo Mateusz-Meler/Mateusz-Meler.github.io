@@ -12,8 +12,7 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
     for (let repo of resp) {
       const { name, description, homepage, html_url } = repo;
       const myGithub = document.querySelector(".github--js");
-      const myTemplate = 
-      `<div class="github">
+      const myTemplate = `<div class="github">
   <div class="github__bar">
       <div class="github__circle"></div>
       <div class="github__circle"></div>
@@ -22,19 +21,18 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
     <div class="github__elements">
     <img class="github__logo" src="img/github-logo.svg" alt="github logo">
     <ul class="list">
-    
       <li class="list--item">project:</li>
       <li class="list--item">description:</li>
       <ul class="secondary-list">
       <li class="secondary-list--item">demo:</li>
       <li class="secondary-list--item">github:</li>
-    </ul>
+  </ul>
   </ul>
     <ul class="date">
     <li class="date__name"> ${name}</li>
     <li class="date__description">${description}</li>
-    <li> <a class="date__homepage" href="${homepage}" title="link do demo ${name} na githubie">see here</a></li>
-    <li> <a class="date__github" href="${html_url}" title="link do repozytorium ${name} na githubie">source code</a></li>
+    <li class="date__homepage--item"><a class="date__homepage" href="${homepage}">see here</a></li>
+    <li class="date__github--item"><a class="date__github" href="${html_url}">source code</a></li>
     </ul>
   </div>
   </div>`;
@@ -44,4 +42,3 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
   .catch((error) => {
     console.log("Masz gdzieś błąd");
   });
-
