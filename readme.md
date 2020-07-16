@@ -1,8 +1,8 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](./public/og.png)
 
-# WTF Webpack Starter Kit 
+# My CV's Project !
 
-Simple toolkit for your static websites development.
+Summary of my programming course.
 
 ## How to use it?
 
