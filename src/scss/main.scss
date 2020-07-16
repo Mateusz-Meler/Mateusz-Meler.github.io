@@ -95,14 +95,14 @@ body {
       margin: 12px 0px;
     }
     &--item::before {
-      content: url(../assets/img/small-tick.svg);
+      content: url(../assets/icons/small-tick.svg);
       margin-right: 12px;
     }
     &--other {
       margin: 12px 0px;
     }
     &--other::before {
-      content: url(../assets/img/small-tick2.svg);
+      content: url(../assets/icons/small-tick2.svg);
       margin-right: 12px;
     }
     &--another {
@@ -290,5 +290,65 @@ body {
       content: ">";
       color: #808082;
     }
+  }
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbeaf7;
+  padding-top: 64px;
+  &__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #234361;
+    margin: 0;
+  }
+  &__description {
+    max-width: 286px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: #425a70;
+    text-align: center;
+    margin: 32px 0 56px 0;
+  }
+  &__mail {
+    margin: 64px 0 88px 0;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 4px 24px;
+    background: #4da8ff;
+    border-radius: 64px;
+    line-height: 40px;
+  }
+}
+
+.box {
+  display: flex;
+  justify-self: space-around;
+  &__circle {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    margin: 0 12px 0 12px;
+    transition: transform 400ms ease-in;
+    opacity: 1;
+  }
+  &__circle:hover {
+    transform: scale(1.5);
+    opacity: 0.7;
   }
 }
