@@ -331,7 +331,6 @@ body {
     line-height: 40px;
   }
 }
-
 .box {
   display: flex;
   justify-self: space-around;
@@ -348,7 +347,9 @@ body {
     opacity: 1;
   }
   &__circle:hover {
-    transform: scale(1.5);
-    opacity: 0.7;
+    @media screen and (min-width: 960px) {
+      transform: scale(1.5);
+      opacity: 0.7;
+    }
   }
 }
