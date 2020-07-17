@@ -12,7 +12,8 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
     for (let repo of resp) {
       const { name, description, homepage, html_url } = repo;
       const myGithub = document.querySelector(".github--js");
-      const myTemplate = `<div class="github">
+      const myTemplate = 
+      `<div class="github">
   <div class="github__bar">
       <div class="github__circle"></div>
       <div class="github__circle"></div>
@@ -35,7 +36,8 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
     <li class="date__github--item"><a class="date__github" href="${html_url}">source code</a></li>
     </ul>
   </div>
-  </div>`;
+  </div>
+  `;
       myGithub.innerHTML += myTemplate;
     }
   })

@@ -176,7 +176,6 @@ body {
     }
   }
 }
-
 .skills-grid {
   @media screen and (min-width: 960px) {
     display: grid;
@@ -185,7 +184,6 @@ body {
     margin-top: 128px;
   }
 }
-
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -219,7 +217,13 @@ body {
     }
   }
 }
-
+.github-grid {
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+}
 .github {
   width: 288px;
   background: #212528;
@@ -256,7 +260,6 @@ body {
     column-gap: 4px;
   }
 }
-
 .list {
   list-style: none;
   font-family: "Roboto Mono", monospace;
@@ -294,7 +297,6 @@ body {
     margin: 8px 0 0 0;
   }
 }
-
 .secondary-special {
   color: #4da8ff;
   font-weight: bold;
@@ -401,7 +403,6 @@ body {
     line-height: 40px;
   }
 }
-
 .box {
   display: flex;
   justify-self: space-around;
