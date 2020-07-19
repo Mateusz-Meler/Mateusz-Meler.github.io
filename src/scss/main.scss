@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap");
+@keyframes hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 html {
   box-sizing: border-box;
@@ -39,7 +52,9 @@ body {
 .cloud {
   display: none;
   &__item {
-    margin-left: 12px;
+    transform-origin: bottom right;
+    animation: hand 2s ease-in-out infinite alternate;
+    margin-left: 10px;
   }
   @media screen and (min-width: 960px) {
     display: flex;
