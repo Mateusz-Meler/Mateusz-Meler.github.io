@@ -49,12 +49,29 @@ body {
     font-style: normal;
     max-width: 288px;
     text-align: center;
+    position: relative;
     @media screen and (min-width: 960px) {
       max-width: 830px;
       font-size: 32px;
       line-height: 40px;
     }
   }
+  &__header::before {
+    @media screen and (min-width: 1100px) {
+      content: url(../assets/icons/bracket.svg);
+      position: absolute;
+      left: -100px;
+    }
+  }
+  &__header::after {
+    @media screen and (min-width: 1100px) {
+      content: url(../assets/icons/bracket2.svg);
+      position: absolute;
+      right: -100px;
+      top: 0px;
+    }
+  }
+
   &__description {
     font-style: normal;
     font-weight: 300;
@@ -110,6 +127,9 @@ body {
     margin: none;
     list-style: none;
     padding: 0 100px 0 0;
+    @media screen and (min-width: 960px) {
+      margin-left: 45px;
+    }
     &--item {
       margin: 12px 0px;
     }
@@ -218,6 +238,11 @@ body {
   }
 }
 .github-grid {
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
   @media screen and (min-width: 1440px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -231,7 +256,7 @@ body {
   border-radius: 16px;
   position: relative;
   margin-bottom: 24px;
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1440px) {
     width: 580px;
   }
   &__bar {
@@ -272,7 +297,7 @@ body {
   margin-top: 72px;
   margin-left: 16px;
   padding: 0;
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1440px) {
     font-size: 16px;
   }
   &--item {
@@ -315,7 +340,7 @@ body {
   margin-top: 80px;
   grid-column: 2;
   grid-row: 1;
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1440px) {
     font-size: 16px;
   }
   &__name {
@@ -326,7 +351,7 @@ body {
   &__description {
     color: #a3a3a3;
     margin: 8px 0 24px 0;
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 1440px) {
       margin: 8px 0 48px 0;
     }
   }
@@ -363,6 +388,9 @@ body {
   justify-content: center;
   background-color: #dbeaf7;
   padding-top: 64px;
+  &__article {
+    position: relative;
+  }
   &__header {
     font-style: normal;
     font-weight: bold;
@@ -401,6 +429,8 @@ body {
     background: #4da8ff;
     border-radius: 64px;
     line-height: 40px;
+    @media screen and (min-width: 960px) {
+    }
   }
 }
 .box {
@@ -417,6 +447,8 @@ body {
     margin: 0 12px 0 12px;
     transition: transform 400ms ease-in;
     opacity: 1;
+    @media screen and (min-width: 960px) {
+    }
   }
   &__circle:hover {
     @media screen and (min-width: 960px) {
