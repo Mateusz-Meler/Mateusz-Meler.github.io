@@ -4,7 +4,6 @@
   0% {
     transform: rotate(0deg);
   }
-  
   50% {
     transform: rotate(30deg);
   }
@@ -473,12 +472,13 @@ body {
     border-radius: 64px;
     line-height: 40px;
     @media screen and (min-width: 960px) {
+      margin: 0;
     }
   }
 }
 .box {
-  display: flex;
-  justify-self: space-around;
+  display: flex; 
+  justify-content: center;
   &__circle {
     display: flex;
     justify-content: center;
@@ -490,13 +490,24 @@ body {
     margin: 0 12px 0 12px;
     transition: transform 400ms ease-in;
     opacity: 1;
-    @media screen and (min-width: 960px) {
-    }
   }
   &__circle:hover {
     @media screen and (min-width: 960px) {
       transform: scale(1.5);
       opacity: 0.7;
     }
+  }
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  @media screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 176px;
+    width: 580px;
   }
 }
