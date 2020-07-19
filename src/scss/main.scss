@@ -43,7 +43,6 @@ body {
   }
   @media screen and (min-width: 960px) {
     display: flex;
-    align-self: flex-end;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -52,8 +51,6 @@ body {
     padding: 16px 19px;
     background-color: #1070ca;
     border-radius: 16px;
-    width: 230px;
-    height: 72px;
     position: relative;
     margin: 0;
     top: -213px;
