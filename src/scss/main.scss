@@ -36,6 +36,39 @@ body {
   }
 }
 
+.cloud {
+  display: none;
+  &__item {
+    margin-left: 12px;
+  }
+  @media screen and (min-width: 960px) {
+    display: flex;
+    align-self: flex-end;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    padding: 16px 19px;
+    background-color: #1070ca;
+    border-radius: 16px;
+    width: 230px;
+    height: 72px;
+    position: relative;
+    width: 230px;
+    height: 72px;
+    margin: 0;
+    top: -213px;
+    right: -168px;
+  }
+}
+.cloud::after {
+  content: url(../assets/icons/speech_cloud.svg);
+  position: absolute;
+  right: 175px;
+  bottom: -32px;
+}
+
 .hello-section {
   display: flex;
   flex-direction: column;
@@ -89,7 +122,7 @@ body {
     }
   }
   &__mail {
-    margin: 44px 0 92px 0;
+    margin: 68px 0 92px 0;
     text-decoration: none;
     color: #fff;
     font-style: normal;
