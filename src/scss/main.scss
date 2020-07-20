@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap");
+@import "modules/hello-section";
+@import "modules/skills-section";
+@import "modules/skills-article";
+@import "modules/projects-section";
+@import "modules/github";
+@import "modules/date";
+@import "modules/contact-section";
 @keyframes hand {
   0% {
     transform: rotate(0deg);
@@ -12,42 +19,40 @@
     transform: rotate(0deg);
   }
 }
-
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
-.header {
-  display: flex;
+.box {
+  display: flex; 
   justify-content: center;
-  align-items: center;
-  margin-top: 74px;
-  &__title {
-    margin: 0;
-  }
-  &__picture {
-    width: 128px;
-    height: 128px;
+  &__circle {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    border: 16px solid #f6f9fd;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    margin: 0 12px 0 12px;
+    transition: transform 400ms ease-in;
+    opacity: 1;
+  }
+  &__circle:hover {
     @media screen and (min-width: 960px) {
-      width: 178px;
-      height: 178px;
-      border: 24px solid #f6f9fd;
+      transform: scale(1.5);
+      opacity: 0.7;
     }
   }
 }
-
 .cloud {
   display: none;
   &__item {
@@ -77,208 +82,6 @@ body {
   right: 175px;
   bottom: -32px;
 }
-
-.hello-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  &__header {
-    color: #234361;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
-    font-style: normal;
-    max-width: 288px;
-    text-align: center;
-    position: relative;
-    @media screen and (min-width: 960px) {
-      max-width: 830px;
-      font-size: 32px;
-      line-height: 40px;
-    }
-  }
-  &__header::before {
-    @media screen and (min-width: 1100px) {
-      content: url(../assets/icons/bracket.svg);
-      position: absolute;
-      left: -100px;
-    }
-  }
-  &__header::after {
-    @media screen and (min-width: 1100px) {
-      content: url(../assets/icons/bracket2.svg);
-      position: absolute;
-      right: -100px;
-      top: 0px;
-    }
-  }
-
-  &__description {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    color: #425a70;
-    max-width: 288px;
-    margin: 0;
-    text-align: center;
-    @media screen and (min-width: 960px) {
-      max-width: 830px;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 40px;
-    }
-  }
-  &__mail {
-    margin: 68px 0 92px 0;
-    text-decoration: none;
-    color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 4px 24px;
-    background: #4da8ff;
-    border-radius: 64px;
-    line-height: 40px;
-  }
-}
-
-.skills-article {
-  @media screen and (min-width: 1440px) {
-    width: 379px;
-  }
-  &__header {
-    color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 44px;
-    margin: 0 0 24px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  &__list {
-    color: #dbeaf7;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    margin: none;
-    list-style: none;
-    padding: 0 100px 0 0;
-    @media screen and (min-width: 960px) {
-      margin-left: 45px;
-    }
-    &--item {
-      margin: 12px 0px;
-    }
-    &--item::before {
-      content: url(../assets/icons/small-tick.svg);
-      margin-right: 12px;
-    }
-    &--other {
-      margin: 12px 0px;
-    }
-    &--other::before {
-      content: url(../assets/icons/small-tick2.svg);
-      margin-right: 12px;
-    }
-    &--another {
-      margin: 12px 0px;
-    }
-    &--another::before {
-      content: "";
-      display: inline-block;
-      width: 2px;
-      height: 2px;
-      border-radius: 50%;
-      background-color: #dbeaf7;
-      margin-right: 17px;
-      margin-bottom: 4px;
-    }
-  }
-}
-
-.skills-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #1070ca;
-  padding: 64px 0;
-  @media screen and (min-width: 960px) {
-    padding: 80px 0;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    margin: 0;
-    @media screen and (min-width: 960px) {
-      font-size: 48px;
-      line-height: 56px;
-    }
-  }
-  &__emoji {
-    display: flex;
-    justify-content: center;
-    font-size: 64px;
-    margin: 64px 0 0 0;
-    @media screen and (min-width: 960px) {
-      margin: 0;
-    }
-  }
-}
-.skills-grid {
-  @media screen and (min-width: 960px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 24px;
-    margin-top: 128px;
-  }
-}
-.projects-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 64px 0;
-  &__description {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    color: #425a70;
-    max-width: 286px;
-    text-align: center;
-    margin: 0 0 46px 0;
-    @media screen and (min-width: 960px) {
-      font-size: 20px;
-      line-height: 40px;
-      max-width: 830px;
-    }
-  }
-  &__header {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    color: #234361;
-    margin: 0 0 32px 0;
-    @media screen and (min-width: 960px) {
-      font-size: 48px;
-      line-height: 56px;
-    }
-  }
-}
 .github-grid {
   @media screen and (min-width: 960px) {
     display: grid;
@@ -291,42 +94,27 @@ body {
     column-gap: 24px;
   }
 }
-.github {
-  width: 288px;
-  background: #212528;
-  min-height: 320px;
-  border-radius: 16px;
-  position: relative;
-  margin-bottom: 24px;
-  @media screen and (min-width: 1440px) {
-    width: 580px;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 74px;
+  &__title {
+    margin: 0;
   }
-  &__bar {
-    background: #1e1e1e;
-    height: 40px;
-    border-radius: 16px 16px 0 0;
-    display: flex;
-    padding: 16px;
-  }
-  &__circle {
-    width: 8px;
-    height: 8px;
+  &__picture {
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
-    background: #464a4d;
-    align-self: center;
-    margin-right: 8px;
-  }
-  &__logo {
-    position: absolute;
-    top: 64px;
-    left: 16px;
-  }
-  &__elements {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 4px;
+    border: 16px solid #f6f9fd;
+    @media screen and (min-width: 960px) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+    }
   }
 }
+
 .list {
   list-style: none;
   font-family: "Roboto Mono", monospace;
@@ -344,6 +132,18 @@ body {
   }
   &--item {
     margin: 8px 0 0 0;
+  }
+}
+.media {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  @media screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 176px;
+    width: 580px;
   }
 }
 .secondary-list {
@@ -368,146 +168,14 @@ body {
   color: #4da8ff;
   font-weight: bold;
 }
-
+.skills-grid {
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    margin-top: 128px;
+  }
+}
 .special {
   color: #1070ca;
-}
-
-.date {
-  font-family: "Roboto Mono", monospace;
-  list-style: none;
-  padding: 0;
-  font-size: 12px;
-  line-height: 24px;
-  margin-top: 80px;
-  grid-column: 2;
-  grid-row: 1;
-  @media screen and (min-width: 1440px) {
-    font-size: 16px;
-  }
-  &__name {
-    font-style: normal;
-    font-weight: normal;
-    color: #ffffff;
-  }
-  &__description {
-    color: #a3a3a3;
-    margin: 8px 0 24px 0;
-    @media screen and (min-width: 1440px) {
-      margin: 8px 0 48px 0;
-    }
-  }
-  &__homepage {
-    color: #14b5d0;
-    &--item {
-      margin-bottom: 8px;
-    }
-    &--item::before {
-      content: "<";
-      color: #808082;
-    }
-    &--item::after {
-      content: ">";
-      color: #808082;
-    }
-  }
-  &__github {
-    color: #14b5d0;
-    &--item::before {
-      content: "<";
-      color: #808082;
-    }
-    &--item::after {
-      content: ">";
-      color: #808082;
-    }
-  }
-}
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #dbeaf7;
-  padding-top: 64px;
-  &__article {
-    position: relative;
-  }
-  &__header {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    color: #234361;
-    margin: 0;
-    @media screen and (min-width: 960px) {
-      font-size: 48px;
-      line-height: 56px;
-    }
-  }
-  &__description {
-    max-width: 286px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    color: #425a70;
-    text-align: center;
-    margin: 32px 0 56px 0;
-    @media screen and (min-width: 960px) {
-      font-size: 20px;
-      line-height: 40px;
-      max-width: 830px;
-    }
-  }
-  &__mail {
-    margin: 64px 0 88px 0;
-    text-decoration: none;
-    color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 4px 24px;
-    background: #4da8ff;
-    border-radius: 64px;
-    line-height: 40px;
-    @media screen and (min-width: 960px) {
-      margin: 0;
-    }
-  }
-}
-.box {
-  display: flex; 
-  justify-content: center;
-  &__circle {
-    display: flex;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
-    margin: 0 12px 0 12px;
-    transition: transform 400ms ease-in;
-    opacity: 1;
-  }
-  &__circle:hover {
-    @media screen and (min-width: 960px) {
-      transform: scale(1.5);
-      opacity: 0.7;
-    }
-  }
-}
-
-.media {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  @media screen and (min-width: 960px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 176px;
-    width: 580px;
-  }
 }

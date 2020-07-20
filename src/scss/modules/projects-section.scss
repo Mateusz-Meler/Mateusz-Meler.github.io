@@ -1,0 +1,33 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+    &__description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 32px;
+      color: #425a70;
+      max-width: 286px;
+      text-align: center;
+      margin: 0 0 46px 0;
+      @media screen and (min-width: 960px) {
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 830px;
+      }
+    }
+    &__header {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      color: #234361;
+      margin: 0 0 32px 0;
+      @media screen and (min-width: 960px) {
+        font-size: 48px;
+        line-height: 56px;
+      }
+    }
+  }

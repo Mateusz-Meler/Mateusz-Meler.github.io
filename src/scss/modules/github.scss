@@ -1,0 +1,36 @@
+.github {
+    width: 288px;
+    background: #212528;
+    min-height: 320px;
+    border-radius: 16px;
+    position: relative;
+    margin-bottom: 24px;
+    @media screen and (min-width: 1440px) {
+      width: 580px;
+    }
+    &__bar {
+      background: #1e1e1e;
+      height: 40px;
+      border-radius: 16px 16px 0 0;
+      display: flex;
+      padding: 16px;
+    }
+    &__circle {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #464a4d;
+      align-self: center;
+      margin-right: 8px;
+    }
+    &__logo {
+      position: absolute;
+      top: 64px;
+      left: 16px;
+    }
+    &__elements {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 4px;
+    }
+  }
