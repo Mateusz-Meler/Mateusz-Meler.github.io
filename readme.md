@@ -1,6 +1,6 @@
 ![cover](./public/og.png)
 
-# My CV's Project !
+# Here's my portfolio final project !
 
 Summary of my programming course.
 
