@@ -1,3 +1,26 @@
+.box {
+  display: flex;
+  justify-content: center;
+  &__circle {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    margin: 0 12px 0 12px;
+    transition: transform 400ms ease-in;
+    opacity: 1;
+  }
+  &__circle:hover {
+    @media (min-width: 960px) {
+      transform: scale(1.5);
+      opacity: 0.7;
+    }
+  }
+}
+
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -15,7 +38,7 @@
       line-height: 48px;
       color: #234361;
       margin: 0;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         font-size: 48px;
         line-height: 56px;
       }
@@ -29,7 +52,7 @@
       color: #425a70;
       text-align: center;
       margin: 32px 0 56px 0;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         font-size: 20px;
         line-height: 40px;
         max-width: 830px;
@@ -46,8 +69,21 @@
       background: #4da8ff;
       border-radius: 64px;
       line-height: 40px;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         margin: 0;
       }
     }
   }
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 176px;
+    width: 580px;
+  }
+}

@@ -1,5 +1,5 @@
 .skills-article {
-    @media screen and (min-width: 1440px) {
+    @media (min-width: 1440px) {
       width: 379px;
     }
     &__header {
@@ -22,8 +22,7 @@
       line-height: 32px;
       margin: none;
       list-style: none;
-      padding: 0 100px 0 0;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         margin-left: 45px;
       }
       &--item {

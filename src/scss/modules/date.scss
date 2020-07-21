@@ -7,7 +7,7 @@
     margin-top: 80px;
     grid-column: 2;
     grid-row: 1;
-    @media screen and (min-width: 1440px) {
+    @media (min-width: 1440px) {
       font-size: 16px;
     }
     &__name {
@@ -18,7 +18,7 @@
     &__description {
       color: #a3a3a3;
       margin: 8px 0 24px 0;
-      @media screen and (min-width: 1440px) {
+      @media (min-width: 1440px) {
         margin: 8px 0 48px 0;
       }
     }

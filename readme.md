@@ -4,9 +4,13 @@
 
 Summary of my programming course.
 
-## How to use it?
+## Tools
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+- WTF Webpack starterkit 
+- HTML5 + CSS3 + JS
+- Github API
+- CSS Grid, Flexbox
+- BEM 
 
 ## Available scripts
 

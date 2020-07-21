@@ -1,3 +1,54 @@
+.cloud {
+  display: none;
+  &__item {
+    transform-origin: bottom right;
+    animation: hand 2s ease-in-out infinite alternate;
+    margin-left: 10px;
+  }
+  @media (min-width: 960px) {
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    padding: 16px 19px;
+    background-color: #1070ca;
+    border-radius: 16px;
+    position: relative;
+    margin: 0;
+    top: -213px;
+    right: -168px;
+  }
+  &::after {
+    content: url(../assets/icons/speech_cloud.svg);
+    position: absolute;
+    right: 175px;
+    bottom: -32px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 74px;
+  &__title {
+    margin: 0;
+  }
+  &__picture {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 16px solid #f6f9fd;
+    @media (min-width: 960px) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+    }
+  }
+}
+
 .hello-section {
     display: flex;
     flex-direction: column;
@@ -12,21 +63,21 @@
       max-width: 288px;
       text-align: center;
       position: relative;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         max-width: 830px;
         font-size: 32px;
         line-height: 40px;
       }
     }
     &__header::before {
-      @media screen and (min-width: 1100px) {
+      @media (min-width: 1100px) {
         content: url(../assets/icons/bracket.svg);
         position: absolute;
         left: -100px;
       }
     }
     &__header::after {
-      @media screen and (min-width: 1100px) {
+      @media (min-width: 1100px) {
         content: url(../assets/icons/bracket2.svg);
         position: absolute;
         right: -100px;
@@ -42,7 +93,7 @@
       max-width: 288px;
       margin: 0;
       text-align: center;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         max-width: 830px;
         font-weight: 300;
         font-size: 20px;

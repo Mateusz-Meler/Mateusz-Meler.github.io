@@ -1,3 +1,23 @@
+.list {
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  color: #808082;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: right;
+  margin-top: 72px;
+  margin-left: 16px;
+  padding: 0;
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
+  &--item {
+    margin: 8px 0 0 0;
+  }
+}
+
 .projects-section {
     display: flex;
     flex-direction: column;
@@ -12,7 +32,7 @@
       max-width: 286px;
       text-align: center;
       margin: 0 0 46px 0;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         font-size: 20px;
         line-height: 40px;
         max-width: 830px;
@@ -25,9 +45,28 @@
       line-height: 48px;
       color: #234361;
       margin: 0 0 32px 0;
-      @media screen and (min-width: 960px) {
+      @media (min-width: 960px) {
         font-size: 48px;
         line-height: 56px;
       }
     }
   }
+
+.secondary-list {
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  color: #808082;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: right;
+  padding: 0;
+  margin-top: 48px;
+  @media (min-width: 960px) {
+    font-size: 16px;
+  }
+  &--item {
+    margin: 8px 0 0 0;
+  }
+}

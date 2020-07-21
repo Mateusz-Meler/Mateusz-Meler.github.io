@@ -19,163 +19,30 @@
     transform: rotate(0deg);
   }
 }
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
-.box {
-  display: flex; 
-  justify-content: center;
-  &__circle {
-    display: flex;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
-    margin: 0 12px 0 12px;
-    transition: transform 400ms ease-in;
-    opacity: 1;
-  }
-  &__circle:hover {
-    @media screen and (min-width: 960px) {
-      transform: scale(1.5);
-      opacity: 0.7;
-    }
-  }
-}
-.cloud {
-  display: none;
-  &__item {
-    transform-origin: bottom right;
-    animation: hand 2s ease-in-out infinite alternate;
-    margin-left: 10px;
-  }
-  @media screen and (min-width: 960px) {
-    display: flex;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    color: #fff;
-    padding: 16px 19px;
-    background-color: #1070ca;
-    border-radius: 16px;
-    position: relative;
-    margin: 0;
-    top: -213px;
-    right: -168px;
-  }
-}
-.cloud::after {
-  content: url(../assets/icons/speech_cloud.svg);
-  position: absolute;
-  right: 175px;
-  bottom: -32px;
-}
-.github-grid {
-  @media screen and (min-width: 960px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-  }
-  @media screen and (min-width: 1440px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-  }
-}
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 74px;
-  &__title {
-    margin: 0;
-  }
-  &__picture {
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    border: 16px solid #f6f9fd;
-    @media screen and (min-width: 960px) {
-      width: 178px;
-      height: 178px;
-      border: 24px solid #f6f9fd;
-    }
-  }
-}
 
-.list {
-  list-style: none;
-  font-family: "Roboto Mono", monospace;
-  color: #808082;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  text-align: right;
-  margin-top: 72px;
-  margin-left: 16px;
-  padding: 0;
-  @media screen and (min-width: 1440px) {
-    font-size: 16px;
-  }
-  &--item {
-    margin: 8px 0 0 0;
-  }
-}
-.media {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  @media screen and (min-width: 960px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 176px;
-    width: 580px;
-  }
-}
-.secondary-list {
-  list-style: none;
-  font-family: "Roboto Mono", monospace;
-  color: #808082;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  text-align: right;
-  padding: 0;
-  margin-top: 48px;
-  @media screen and (min-width: 960px) {
-    font-size: 16px;
-  }
-  &--item {
-    margin: 8px 0 0 0;
-  }
-}
 .secondary-special {
   color: #4da8ff;
   font-weight: bold;
 }
-.skills-grid {
-  @media screen and (min-width: 960px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 24px;
-    margin-top: 128px;
-  }
-}
+
 .special {
   color: #1070ca;
+  @media (min-width: 960px) {
+    white-space: nowrap;
+  }
 }

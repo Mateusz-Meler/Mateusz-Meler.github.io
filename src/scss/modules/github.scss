@@ -5,7 +5,7 @@
     border-radius: 16px;
     position: relative;
     margin-bottom: 24px;
-    @media screen and (min-width: 1440px) {
+    @media (min-width: 1440px) {
       width: 580px;
     }
     &__bar {
@@ -34,3 +34,17 @@
       column-gap: 4px;
     }
   }
+
+  .github-grid {
+    @media (min-width: 960px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+    }
+    @media (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+    }
+  }
+  
