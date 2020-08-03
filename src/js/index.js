@@ -26,8 +26,8 @@ fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
     <ul class="date">
     <li class="date__name"> ${name}</li>
     <li class="date__description">${description}</li>
-    <li class="date__homepage--item"><a class="date__homepage" href="${homepage}" target="_blank"  rel="noopener noreferrer">see here</a></li>
-    <li class="date__github--item"><a class="date__github" href="${html_url}" target="_blank"  rel="noopener noreferrer">source code</a></li>
+    <li class="date__homepage--item">&lt;<a class="date__homepage" href="${homepage}" title="${name} - demo" target="_blank"  rel="noopener noreferrer">see here</a>&gt;</li>
+    <li class="date__github--item">&lt;<a class="date__github" href="${html_url}" title="${name} - code" target="_blank"  rel="noopener noreferrer">source code</a>&gt;</li>
     </ul>
   </div>
   </div>

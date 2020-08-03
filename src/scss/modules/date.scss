@@ -26,24 +26,12 @@
       color: #14b5d0;
       &--item {
         margin-bottom: 8px;
-      }
-      &--item::before {
-        content: "<";
-        color: #808082;
-      }
-      &--item::after {
-        content: ">";
         color: #808082;
       }
     }
     &__github {
       color: #14b5d0;
-      &--item::before {
-        content: "<";
-        color: #808082;
-      }
-      &--item::after {
-        content: ">";
+      &--item {
         color: #808082;
       }
     }
