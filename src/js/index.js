@@ -1,7 +1,6 @@
 import "../scss/main.scss";
-import smoothscroll from "smoothscroll-polyfill";
-smoothscroll.polyfill();
-
+import SmoothScroll from "smooth-scroll";
+var scroll = new SmoothScroll('a[href*="#"]');
 console.log("Hello, I'm Mateusz - nice to meet you 😎");
 
 fetch("https://api.github.com/users/mateusz-meler/repos?sort=created")
